@@ -2,15 +2,18 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { ParentComponentComponent } from './parent-component/parent-component.component';
-import { ChildComponentComponent } from './child-component/child-component.component';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { ListStudentsComponent } from './list-students/list-students.component';
+import { ChartsComponent } from './charts/charts.component';
 
 const routes: Routes = [
   {path:'',component:LoginPageComponent},
+  
   {path:'homepage', component:HomePageComponent,
     children: [
-      {path:'parent', component:ParentComponentComponent},
-      {path:'child', component:ChildComponentComponent}
+      {path:'addStudent', component:AddStudentComponent},
+      {path:'listStudents', component:ListStudentsComponent},
+      {path:'charts', component:ChartsComponent}
     ]
   }
 ];

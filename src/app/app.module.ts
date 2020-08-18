@@ -6,16 +6,18 @@ import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { ParentComponentComponent } from './parent-component/parent-component.component';
-import { ChildComponentComponent } from './child-component/child-component.component';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { ListStudentsComponent } from './list-students/list-students.component';
+import { ChartsComponent } from './charts/charts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     HomePageComponent,
-    ParentComponentComponent,
-    ChildComponentComponent
+    AddStudentComponent,
+    ListStudentsComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,
