@@ -1,9 +1,25 @@
 .homepg{
     background-color: blue;
 }
+.logout{
+    text-align:right;
+    font-weight: bold;
+    color:white;
+      
+}
 h1{
     color:white
 }
 a{
     color:blue
 }
+nav {
+    position: absolute;
+    left: auto;
+    width: 180px;
+    background-color:lightgray;
+  }
+  section {
+    /* position is static by default */
+    margin-left: 200px;
+  }

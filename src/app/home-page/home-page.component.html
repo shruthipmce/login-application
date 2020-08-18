@@ -1,15 +1,20 @@
 <div class="homepg">
-<h1>Welcome!</h1>
+    <h1>Welcome!</h1>
+    <div class="logout">
+        <p routerLink = "" >Logout</p>
+    </div>
+    
 </div>
 
-<div style="width:20%; position: relative;background-color: rgb(202, 196, 196);">
-<nav>
- <a   routerLink = 'parent'>Parent Component </a>
+<div>
+    <nav>
+        <a routerLink = 'parent'>Parent Component </a><br>
+        <a routerLink = 'child'>Child Component </a>
 
-<a routerLink = 'child'>Child Component </a>
-</nav>
+    </nav>
 
-</div>
-<div style="width:80%; position: relative; left: 20%; top:-50px">
-    <router-outlet></router-outlet>
+
+    <section>
+        <router-outlet></router-outlet>
+    </section>
 </div>
