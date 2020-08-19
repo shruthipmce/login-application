@@ -9,6 +9,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { ListStudentsComponent } from './list-students/list-students.component';
 import { ChartsComponent } from './charts/charts.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ChartsComponent } from './charts/charts.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
