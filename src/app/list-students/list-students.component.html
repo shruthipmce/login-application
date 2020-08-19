@@ -1,1 +1,12 @@
 <h1>Students List</h1>
+<ngx-datatable
+        class="material"
+        [rows]="rows"
+        [columns]="[{ name: 'Name' }, { name: 'Subject' }, { name: 'Email' }, { name: 'DOB' }, { name: 'Section' }, { name: 'Gender' }]"
+        [columnMode]="ColumnMode.force"
+        [headerHeight]="50"
+        [footerHeight]="50"
+        rowHeight="auto"
+        [limit]="10"
+      >
+</ngx-datatable>

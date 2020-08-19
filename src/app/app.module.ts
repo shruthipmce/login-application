@@ -10,6 +10,7 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { ListStudentsComponent } from './list-students/list-students.component';
 import { ChartsComponent } from './charts/charts.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    NgxChartsModule
+    NgxChartsModule,
+    NgxDatatableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
